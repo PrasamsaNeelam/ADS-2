@@ -24,7 +24,7 @@ class Percolation {
     /**
      * Object for CC.
      */
-    private CC cc; 
+    private CC cc;
 /**
  * Constructs the object.
  *

@@ -144,3 +144,4 @@ class Solution {
         System.out.println(wc.percolates());
 }
 }
+

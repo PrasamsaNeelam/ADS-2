@@ -66,7 +66,6 @@ public class Bag<Item> implements Iterable<Item> {
         n++;
     }
 
-
     /**
       * Return an iterator that iterates over the items in the bag.
       * @return list iterator.

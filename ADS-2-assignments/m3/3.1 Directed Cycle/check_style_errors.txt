@@ -7,11 +7,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:8: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:29: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

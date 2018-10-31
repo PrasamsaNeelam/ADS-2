@@ -26,7 +26,7 @@ public class Solution {
 		while (s.hasNext()) {
 			String lines = s.nextLine();
 			String[] tokens = lines.split(" ");
-			dg.addEdge(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+			dg.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 		}
 		DirectedCycle dc = new DirectedCycle(dg);
 		if (dc.hasCycle()) {

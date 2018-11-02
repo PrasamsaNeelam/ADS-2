@@ -1,0 +1,23 @@
+Starting audit...
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:124:32: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:139:37: Parameter v should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 2 errors.
+Starting audit...
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:2: Class Solution should be declared as final. [FinalClass]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:6:17: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:6:41: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:16: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:17: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:37: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 9 errors.

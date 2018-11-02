@@ -1,38 +1,45 @@
+/**.
+ * { item_description }
+ */
 import java.util.Scanner;
-import java.io.File;
-/**
- * Class for solution.
+/**.
+ * { item_description }
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		//unused constructor.
-	}
-	/**
-	 * main method.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		String synset = StdIn.readString();
-		String hypernym = StdIn.readString();
-		String type = StdIn.readString();
-		try {
-			if (type.equals("Graph")) {
-				WordNet wordnet = new WordNet(synset, hypernym);
-
-			}
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-		if(type.equals("Queries")) {
-			String[] query = StdIn.readString().split(" ");
-			if(query[0].equals("null")) {
-				System.out.println("IllegalArgumentException");
-			}
-		}
-
-	}
+    /**.
+     * Constructs the object.
+     */
+    private Solution() {
+        /**.
+         * { item_description }
+         */
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    // time complexity for the main method is 1.
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String n = "Files" + "\\" + sc.nextLine();
+        String m = "Files" + "\\" + sc.nextLine();
+        String word = sc.nextLine();
+        try {
+            WordNet wn = new WordNet(n, m);
+            if (word.equals("Graph")) {
+                wn.display();
+            } else if (word.equals("Queries")) {
+                while (sc.hasNextLine()) {
+                    String[] tokens = sc.nextLine().split(" ");
+                    String str = wn.sap(tokens[0], tokens[1]);
+                    int id = wn.distance(tokens[0], tokens[1]);
+                    System.out.println("distance = " + id
+                        + ", ancestor = " + str);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("IllegalArgumentException");
+        }
+    }
 }

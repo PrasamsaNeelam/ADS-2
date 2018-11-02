@@ -1,83 +1,148 @@
-import java.util.List;
+/**.
+ * { item_description }
+ */
+import java.io.File;
+/**.
+ * { item_description }
+ */
+
+import java.util.Scanner;
+/**.
+ * { item_description }
+ */
 import java.util.ArrayList;
-/**
+/**.
  * Class for word net.
  */
 public class WordNet {
-    private LinearProbingHashST<String, List<Integer>> linearprobing;
-    /**
+    /**.
+     * { var_description }
+     */
+    private SAP sap;
+    /**.
+     * { var_description }
+     */
+    private Digraph dg;
+    /**.
+     * { item_description }
+     */
+    private HashTable<String, ArrayList<Integer>> htable;
+    /**.
+     * { var_description }
+     */
+    private HashTable<Integer, String> htable1;
+    /**.
+     * { var_description }
+     */
+    private int ver = 0;
+    /**.
      * Constructs the object.
-     *
+     * @throws     Exception  { exception_description }
      * @param      synsets    The synsets
      * @param      hypernyms  The hypernyms
      */
-    public WordNet(String synsets, String hypernyms) {
-        linearprobing = new LinearProbingHashST<String, List<Integer>>();
-        readSynset(synsets, hypernyms);
+    WordNet(final String synsets, final String hypernyms) throws Exception {
+        readSynsets(synsets);
+        readHypernyms(hypernyms);
+        // dg = new Digraph(ver);
+        // readHypernyms(hypernyms);
+        // sap = new SAP(dg);
     }
-
-    public void readSynset(String synset, String hypernyms) {
+    /**.
+     * Reads synsets.
+     *
+     * @param      synsets    The synsets
+     *
+     * @throws     Exception  { exception_description }
+     */
+    public void readSynsets(final String synsets) throws Exception {
+        htable = new HashTable<String, ArrayList<Integer>>();
+        htable1 = new HashTable<Integer, String>();
         int id = 0;
-        int vertices = 0;
-        In input = new In("./Files/" + synset);
-        while (!input.isEmpty()) {
-            vertices++;
-            ArrayList<Integer> idlist = new ArrayList<Integer>();
-            String[] synsetArray = input.readString().split(",");
-            idlist.add(Integer.parseInt(synsetArray[0]));
-            if (synsetArray[1].length() > 1) {
-                for (int i = 0; i < synsetArray[1].length(); i++) {
-                    String[] nounsArray = synsetArray[1].split(" ");
-                    if (linearprobing.contains(nounsArray[i])) {
-                        idlist.addAll(linearprobing.get(synsetArray[i]));
-                        linearprobing.put(synsetArray[1], idlist);
+            Scanner synIn = new Scanner(new File(synsets));
+            while (synIn.hasNextLine()) {
+                ver++;
+                // String line = synIn.readString();
+                String[] tokens = synIn.nextLine().split(",");
+                id = Integer.parseInt(tokens[0]);
+                htable1.put(id, tokens[1]);
+                String[] word = tokens[1].split(" ");
+                for (int i = 0; i < word.length; i++) {
+                    if (htable.contains(word[i])) {
+                        ArrayList<Integer> list = htable.get(word[i]);
+                        list.add(id);
+                        htable.put(word[i], list);
                     } else {
-                        linearprobing.put(nounsArray[i], idlist);
+                        ArrayList<Integer> list = new ArrayList<Integer>();
+                        list.add(Integer.parseInt(tokens[0]));
+                        htable.put(word[i], list);
                     }
                 }
             }
-        }
-        Digraph digraph = new Digraph(vertices);
-        readHypernym(hypernyms, digraph);
     }
-
-    public void readHypernym(String hypernyms, Digraph graph) {
-
-        int count = 0;
-        In in = new In("./Files/" + hypernyms);
-        while (!in.isEmpty()) {
-            count++;
-            String[] tokens = in.readString().split(",");
+    /**.
+     * Reads hypernyms.
+     *
+     * @param      hypernyms  The hypernyms
+     *
+     * @throws     Exception  { exception_description }
+     */
+    public void readHypernyms(final String hypernyms) throws Exception {
+        dg = new Digraph(ver);
+        Scanner hyperIn = new Scanner(new File(hypernyms));
+        while (hyperIn.hasNextLine()) {
+            // String line = ;
+            String[] tokens = hyperIn.nextLine().split(",");
             for (int i = 1; i < tokens.length; i++) {
-                graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
+                dg.addEdge(Integer.parseInt(tokens[0]),
+                 Integer.parseInt(tokens[i]));
             }
         }
-        DirectedCycle directedCycle = new DirectedCycle(graph);
-        if (directedCycle.hasCycle()) {
-            throw new IllegalArgumentException("Cycle detected");
+    }
+    /**.
+     * { function_description }
+     */
+    public void display() {
+        int c = 0;
+        DirectedCycle dc = new DirectedCycle(dg);
+        for (int i = 0; i < ver; i++) {
+            if (dg.outdegree(i) == 0) {
+                c++;
+            }
+        }
+        if (c > 1) {
+            System.out.println("Multiple roots");
+        } else if (dc.hasCycle()) {
+            System.out.println("Cycle detected");
         } else {
-            int degree = 0;
-            for (int i = 0; i < graph.V(); i++) {
-                if (graph.outdegree(i) == 0) {
-                    degree++;
-                }
-            }
-            if (degree > 1) {
-                throw new IllegalArgumentException("Multiple roots");
-            }
-            System.out.println(graph);
+            System.out.println(dg);
         }
-
     }
-
-    // returns all WordNet nouns
-    public Iterable<String> nouns() {
-        return linearprobing.keys();
+    /**.
+     * { function_description }
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int distance(final String nounA, final String nounB) {
+        sap = new SAP(dg);
+        int dist = sap.length(htable.get(nounA), htable.get(nounB));
+        return dist;
     }
-
-    //is the word a WordNet noun?
-    public boolean isNoun(String word) {
-        return linearprobing.contains(word);
+    /**.
+     * { function_description }
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public String sap(final String nounA, final String nounB) {
+        sap = new SAP(dg);
+        String str = "";
+        int id = sap.ancestor(htable.get(nounA), htable.get(nounB));
+        return htable1.get(id);
     }
 }
-

@@ -121,7 +121,7 @@ class Graph {
      *
      * @return     True if has self loop, False otherwise.
      */
-    public boolean hasSelfLoop(int v) {
+    public boolean hasSelfLoop(final int v) {
         for (int w : adj(v)) {
             if (v == w) {
                 return true;
@@ -136,7 +136,7 @@ class Graph {
      *
      * @return     True if has parallel edges, False otherwise.
      */
-    public boolean hasParallelEdges(int v) {
+    public boolean hasParallelEdges(final int v) {
         marked = new boolean[vertices()];
         for (int w : adj(v)) {
             if (marked[w]) {

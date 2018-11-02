@@ -5,8 +5,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:28: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:48: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 3 errors.

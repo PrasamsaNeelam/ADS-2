@@ -1,6 +1,4 @@
-/**.
- * { item_description }
- */
+
 import java.util.Iterator;
 /**.
  * { item_description }
@@ -31,11 +29,11 @@ public class Queue<Item> implements Iterable<Item> {
      */
     private static class Node<Item> {
         /**.
-         * { var_description }
+         * { variable for item }.
          */
         private Item item;
         /**.
-         * { var_description }
+         * { variable for next }.
          */
         private Node<Item> next;
     }
@@ -56,8 +54,10 @@ public class Queue<Item> implements Iterable<Item> {
         return first == null;
     }
     /**.
-     * { function_description }
+     * Variable for size.
+     *
      * time complexity is 1 in avg case
+     *
      * @return     { description_of_the_return_value }
      */
     public int size() {
@@ -66,8 +66,11 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns the item least recently added to this queue.
+     *
      * time complexity is 1 in avg case
+     *
      * @return the item least recently added to this queue
+     *
      * @throws NoSuchElementException if this queue is empty
      */
     public Item peek() {
@@ -79,7 +82,9 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Adds the item to this queue.
+     *
      * time complexity is 1 in avg case
+     *
      * @param  item the item to add
      */
     public void enqueue(final Item item) {
@@ -97,8 +102,11 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**.
      * Removes and returns the item on this queue that was least recently added.
+     *
      * time complexity is 1 in avg case
+     *
      * @return the item on this queue that was least recently added
+     *
      * @throws NoSuchElementException if this queue is empty
      */
     public Item dequeue() {
@@ -127,7 +135,7 @@ public class Queue<Item> implements Iterable<Item> {
         return s.toString();
     }
     /**.
-     * { function_description }
+     * Function to iterate.
      * time complexity is 1 in avg case
      * @return     { description_of_the_return_value }
      */
@@ -155,14 +163,16 @@ public class Queue<Item> implements Iterable<Item> {
         }
         /**.
          * Determines if it has next.
+         *
          * time complexity is 1 in avg case
+         *
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
             return current != null;
         }
         /**.
-         * { function_description }
+         * Function to remove.
          * time complexity is 1 in avg case
          */
         public void remove() {

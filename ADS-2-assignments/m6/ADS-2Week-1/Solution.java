@@ -1,7 +1,17 @@
 import java.util.Scanner;
+/**
+ * Class for page rank.
+ */
 class PageRank {
+	/**
+	 * variable for float array.
+	 */
 	float[] pr;
-
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      graph  The graph
+	 */
 	PageRank(Digraph graph) {
 		Scanner s = new Scanner(System.in);
 		s.nextLine();
@@ -13,14 +23,32 @@ class PageRank {
 			pr[i] = 1 / den;
 		}
 	}
+	// public float calcRank() {
+		
+	// }
 }
-
+/**
+ * Class for web search.
+ */
 class WebSearch {
 
 }
 
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+
+	}
+	/**
+	 * Main function to drive the program.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		// read the first line of the input to get the number of vertices
 		Scanner s = new Scanner(System.in);

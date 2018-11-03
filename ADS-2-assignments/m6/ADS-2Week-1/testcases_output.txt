@@ -13,7 +13,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:37)
+	at Solution.main(Solution.java:65)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -32,7 +32,7 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:36)
+	at Solution.main(Solution.java:64)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -51,7 +51,7 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:36)
+	at Solution.main(Solution.java:64)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -77,7 +77,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:37)
+	at Solution.main(Solution.java:65)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -99,7 +99,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:37)
+	at Solution.main(Solution.java:65)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -125,7 +125,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:37)
+	at Solution.main(Solution.java:65)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -144,7 +144,7 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:33)
+	at Solution.main(Solution.java:61)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -166,7 +166,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:37)
+	at Solution.main(Solution.java:65)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -185,7 +185,7 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:33)
+	at Solution.main(Solution.java:61)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -207,7 +207,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:37)
+	at Solution.main(Solution.java:65)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -222,7 +222,7 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:33)
+	at Solution.main(Solution.java:61)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -261,6 +261,6 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:37)
+	at Solution.main(Solution.java:65)
 ----------------------------------------
 

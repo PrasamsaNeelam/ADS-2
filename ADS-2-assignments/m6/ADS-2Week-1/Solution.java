@@ -1,64 +1,9 @@
-// /**
-//  * Class for solution.
-//  */
-// public class Solution {
-//     /**
-//      * Constructs the object.
-//      */
-//     private Solution() {
-
-//     }
-//     /**
-//      * Main function to drive the program.
-//      *
-//      * @param      args  The arguments
-//      */
-//     public static void main(String[] args) {
-//         // read the first line of the input to get the number of vertices
-//         Scanner s = new Scanner(System.in);
-//         int vertices = Integer.parseInt(s.nextLine());
-//         // iterate count of vertices times 
-//         // to read the adjacency list from std input
-//         // and build the graph
-//         Digraph graph = new Digraph(vertices);
-//         for (int i = 0; i < vertices; i++) {
-//             String[] tokens = s.nextLine().split(" ");
-//             int data = Integer.parseInt(tokens[0]);
-//             for (int j = 1; j < tokens.length; j++) {
-//                 String[] tokens1 = s.nextLine().split(" ");
-//                 graph.addEdge(data, Integer.parseInt(tokens1[j]));
-//             }
-//         }
-        
-        
-//         // Create page rank object and pass the graph object to the constructor
-//         PageRank pr = new PageRank(graph);
-        
-//         // print the page rank object
-//         System.out.println(pr);
-        
-//         // This part is only for the final test case
-        
-//         // File path to the web content
-//         String file = "WebContent.txt";
-        
-//         // instantiate web search object
-//         // and pass the page rank object and the file path to the constructor
-        
-//         // read the search queries from std in
-//         // remove the q= prefix and extract the search word
-//         // pass the word to iAmFeelingLucky method of web search
-//         // print the return value of iAmFeelingLucky
-        
-//     }
-// }
-
 /**
- * { item_description }.
+ * Imports Scanner class.
  */
 import java.util.Scanner;
 /**
- * { item_description }.
+ * Imports Arrays class.
  */
 import java.util.Arrays;
 /**
@@ -204,3 +149,4 @@ public final class Solution {
 
     }
 }
+

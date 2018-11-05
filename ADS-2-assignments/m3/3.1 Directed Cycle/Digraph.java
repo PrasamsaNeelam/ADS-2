@@ -49,7 +49,7 @@ public class Digraph {
      * Constructs the object.
      * Initializes a new digraph that is a deep copy
      * of the specified digraph.
-     *
+     * its complexity is O(N^2)
      * @param      grp   The group
      */
     public Digraph(final Digraph grp) {

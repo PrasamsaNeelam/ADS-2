@@ -212,7 +212,8 @@ public final class Solution {
 			String[] tokens = s.nextLine().split(" ");
 			Edge edge = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
 			ewg.addEdge(edge);
-			KruskalMST krus = new KruskalMST(ewg);
 		}
+		KruskalMST krus = new KruskalMST(ewg);
+		System.out.format("%.5f", krus.weight());
 	}
 }

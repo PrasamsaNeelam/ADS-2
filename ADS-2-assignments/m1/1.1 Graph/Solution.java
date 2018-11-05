@@ -98,7 +98,7 @@ class Newgraph implements Graph {
     }
     /**
      * vertice method.
-     *
+     *its complexity is O(1)
      * @return     int
      */
     public int vertices() {
@@ -106,7 +106,7 @@ class Newgraph implements Graph {
     }
     /**
      * edge method.
-     *
+     *its complexity is O(1)
      * @return     int
      */
     public int edges() {
@@ -114,7 +114,7 @@ class Newgraph implements Graph {
     }
     /**
      * Adds an edge.
-     *
+     *its complexity is O(N)
      * @param      vertexOne  The vertex one
      * @param      vertexTwo  The vertex two
      */
@@ -130,7 +130,7 @@ class Newgraph implements Graph {
     }
     /**
      * Iterable.
-     *
+     *its complexity is O(1)
      * @param      vertex  The vertex
      *
      * @return     int
@@ -143,7 +143,7 @@ class Newgraph implements Graph {
      *
      * @param      v     integer
      * @param      w     integer
-     *
+     *its complexity is O(1)
      * @return     True if has edge, False otherwise.
      */
     public boolean hasEdge(final int v, final int w) {
@@ -155,7 +155,7 @@ class Newgraph implements Graph {
     }
     /**
      * display function of adjacency list.
-     *
+     *its complexity is O(N)
      * @param      vert       int
      * @param      edg        int
      * @param      tok        The tokens
@@ -183,7 +183,7 @@ class Newgraph implements Graph {
     }
     /**
      * display function of adjacency matrix list.
-     *
+     *its complexity is O(N)
      * @param      vert        int
      * @param      edg         int
      *

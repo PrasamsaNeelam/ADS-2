@@ -79,8 +79,11 @@ public class Bipartite {
         return isBipartite;
     }
     /**
-     * Returns the side of the bipartite that vertex {@code v} is on.
-     * its complexity is O(N)
+     * function for color.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public boolean color(final int v) {
         validateVertex(v);

@@ -83,7 +83,7 @@ public class DirectedCycle {
      * @return a directed cycle (as an iterable) if
      * the digraph has a directed cycle,
      *    and {@code null} otherwise
-     *    
+     *
      *    its complexity is O(1)
      */
     public Iterable<Integer> cycle() {
@@ -93,7 +93,7 @@ public class DirectedCycle {
     /**
      * certify that digraph has a directed.
      * cycle if it reports one
-     * 
+     *
      * its complexity is O(N)
      *
      * @return     { description_of_the_return_value }

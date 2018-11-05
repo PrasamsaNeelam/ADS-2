@@ -80,18 +80,7 @@ public class Bipartite {
     }
     /**
      * Returns the side of the bipartite that vertex {@code v} is on.
-     *
-     * @param  v the vertex
-     * @return the side of the bipartition that vertex
-     * {@code v} is on; two vertices
-     *         are in the same side of the bipartition
-     *         if and only if they have the
-     *         same color
-     * @throws IllegalArgumentException unless {@code
-     * 0 <= v < V}
-     * @throws UnsupportedOperationException if this
-     *  method is called when the graph
-     *         is not bipartite
+     * its complexity is O(N)
      */
     public boolean color(final int v) {
         validateVertex(v);

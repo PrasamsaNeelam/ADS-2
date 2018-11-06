@@ -33,7 +33,7 @@ final class Solution {
         new EdgeWeightedGraph(vertex);
         for (int i = 0; i < edges; i++) {
             String[] data = s.nextLine().split(" ");
-            e = new Edge(bst.get(tokens[0]),
+            e = new Edge(bst.get(data[0]),
                 bst.get(data[1]), Double.parseDouble(data[2]));
             ewg.addEdge(e);
         }

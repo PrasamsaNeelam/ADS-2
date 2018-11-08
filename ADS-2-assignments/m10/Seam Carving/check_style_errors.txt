@@ -319,11 +319,12 @@ Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:29:36: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:43:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:76: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:84: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:102: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:48:9: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:79: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:87: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:105: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 21 errors.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\StdOut.java:16: Line is longer than 80 characters (found 84). [LineLength]

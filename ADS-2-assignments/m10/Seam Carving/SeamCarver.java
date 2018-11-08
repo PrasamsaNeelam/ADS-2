@@ -26,12 +26,12 @@ public class SeamCarver {
 		if (x == 0 || y == 0 || picture.height() - 1 == 0 || picture.width() - 1 == 0) {
 			return 1000;
 		} else {
-			Color hozleft = picture.get(x+1, y);
-			Color hozright = picture.get(x-1, y);
+			Color hozright = picture.get(x+1, y);
+			Color hozleft = picture.get(x-1, y);
 			Color vertop = picture.get(x, y-1);
 			Color verbottom = picture.get(x, y+1);
-			deltax = (((hozleft.getRed() - hozright.getRed())^2) + ((hozleft.getGreen() - hozright.getGreen())^2) + ((hozleft.getBlue() - hozright.getBlue())^2));
-			deltay = (((vertop.getRed() - verbottom.getRed())^2) + ((vertop.getGreen() - verbottom.getGreen())^2) + ((vertop.getBlue() - verbottom.getBlue())^2));
+			deltax = (Math.pow(hozright.getRed() - hozleft.getRed(), 2) + Math.pow(hozright.getGreen() - hozleft.getGreen(), 2) + Math.pow(hozright.getBlue() - hozleft.getBlue(), 2));
+			deltay = (Math.pow(vertop.getRed() - verbottom.getRed(), 2) + Math.pow(vertop.getGreen() - verbottom.getGreen(), 2) + Math.pow(vertop.getBlue() - verbottom.getBlue(), 2));
 			return Math.sqrt(deltax + deltay);
 		}
 	}

@@ -32,7 +32,7 @@ public class SeamCarver {
 			Color verbottom = picture.get(x, y+1);
 			deltax = (((hozleft.getRed() - hozright.getRed())^2) + ((hozleft.getGreen() - hozright.getGreen())^2) * ((hozleft.getBlue() - hozright.getBlue())^2));
 			deltay = (((vertop.getRed() - verbottom.getRed())^2) + ((vertop.getGreen() - verbottom.getGreen())^2) * ((vertop.getBlue() - verbottom.getBlue())^2));
-			return deltax + deltay;
+			return Math.sqrt(deltax + deltay);
 		}
 	}
 

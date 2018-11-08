@@ -23,7 +23,7 @@ public class SeamCarver {
 	public double energy(int x, int y) {
 		double deltax = 0.0;
 		double deltay = 0.0;
-		if (x == 0 || y == 0 || picture.height() - 1 == 0 || picture.width() - 1 == 0) {
+		if (x == 0 || y == 0 || x == picture.width() - 1 || y == picture.height() - 1) {
 			return 1000;
 		} else {
 			Color hozright = picture.get(x+1, y);

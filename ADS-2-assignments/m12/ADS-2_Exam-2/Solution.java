@@ -19,7 +19,7 @@ public class Solution {
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
-			//System.out.println(vertices + " vertices " + edges + " edges");
+			System.out.println(vertices + " vertices " + edges + " edges");
 			System.out.println(ewg);
 			break;
 

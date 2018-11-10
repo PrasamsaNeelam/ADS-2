@@ -8,11 +8,10 @@ public class Solution {
 		Scanner s = new Scanner(System.in);
 		int vertices = Integer.parseInt(s.nextLine());
 		int edges = Integer.parseInt(s.nextLine());
-		s.nextLine();
-		EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertices);
+		EdgeWeightedDigraph ewg = new EdgeWeightedDigraph(vertices);
 		for (int i = 0; i < edges; i++) {
 			String[] tokens = s.nextLine().split(" ");
-			Edge edge = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
+			DirectedEdge edge = new DirectedEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
 			ewg.addEdge(edge);
 		}
 
@@ -26,15 +25,16 @@ public class Solution {
 
 		case "DirectedPaths":
 			// Handle the case of DirectedPaths, where two integers are given.
-			// String[] tokens = s.nextLine().split(" ");
-			// // First is the source and second is the destination.
-			// DijkstraSP ds = new DijkstraSP(ewg, Integer.parseInt(tokens[0]));
-			// // If the path exists print the distance between them.
-			// if (ds.hasPathTo(Integer.parseInt(tokens[1]))) {
-			// 	System.out.format("%.1f",ds.distTo(Integer.parseInt(tokens[1])));
-			// // Other wise print "No Path Found."
-			// } else {
+			String[] tokens = s.nextLine().split(" ");
+			// First is the source and second is the destination.
+			DijkstraSP ds = new DijkstraSP(ewg, Integer.parseInt(tokens[0]));
+			// If the path exists print the distance between them.
+			if (ds.hasPathTo(Integer.parseInt(tokens[1]))) {
+				System.out.format("%.1f",ds.distTo(Integer.parseInt(tokens[1])));
+			// Other wise print "No Path Found."
+			} else {
 				System.out.println("No Path Found.");
+			}
 			break;
 
 		case "ViaPaths":

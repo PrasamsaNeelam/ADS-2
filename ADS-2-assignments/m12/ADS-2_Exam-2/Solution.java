@@ -20,7 +20,8 @@ public class Solution {
 		case "Graph":
 			//Print the Graph Object.
 			System.out.println(vertices + " vertices " + edges + " edges");
-			System.out.println(krus.weight());
+			System.out.print(krus.edges());
+			System.out.format("%.5f", krus.weight());
 			break;
 
 		case "DirectedPaths":

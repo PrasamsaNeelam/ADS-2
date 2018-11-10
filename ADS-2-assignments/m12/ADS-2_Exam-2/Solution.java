@@ -8,10 +8,10 @@ public class Solution {
 		Scanner s = new Scanner(System.in);
 		int vertices = Integer.parseInt(s.nextLine());
 		int edges = Integer.parseInt(s.nextLine());
-		EdgeWeightedDigraph ewg = new EdgeWeightedDigraph(vertices);
+		EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertices);
 		for (int i = 0; i < edges; i++) {
 			String[] tokens = s.nextLine().split(" ");
-			DirectedEdge edge = new DirectedEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
+			Edge edge = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
 			ewg.addEdge(edge);
 		}
 
@@ -27,7 +27,7 @@ public class Solution {
 			// Handle the case of DirectedPaths, where two integers are given.
 			String[] tokens = s.nextLine().split(" ");
 			// First is the source and second is the destination.
-			DijkstraSP ds = new DijkstraSP(ewg, Integer.parseInt(tokens[0]));
+			DijkstraUndirectedSP ds = new DijkstraUndirectedSP(ewg, Integer.parseInt(tokens[0]));
 			// If the path exists print the distance between them.
 			if (ds.hasPathTo(Integer.parseInt(tokens[1]))) {
 				System.out.format("%.01f",ds.distTo(Integer.parseInt(tokens[1])));

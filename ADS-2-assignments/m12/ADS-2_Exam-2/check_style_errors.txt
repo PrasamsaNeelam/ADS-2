@@ -232,13 +232,13 @@ Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:14: Line is longer than 80 characters (found 150). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:21: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:26: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:29: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:32: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:32:58: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:40: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:42: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:22: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:27: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:30: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:33:58: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:41: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
 Checkstyle ends with 14 errors.
 Starting audit...

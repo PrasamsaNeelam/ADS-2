@@ -14,11 +14,12 @@ public class Solution {
 			DirectedEdge edge = new DirectedEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
 			ewg.addEdge(edge);
 		}
+
 		String caseToGo = s.nextLine();
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
-			System.out.println(vertices + " vertices " + edges + " edges");
+			//System.out.println(vertices + " vertices " + edges + " edges");
 			System.out.println(ewg);
 			break;
 

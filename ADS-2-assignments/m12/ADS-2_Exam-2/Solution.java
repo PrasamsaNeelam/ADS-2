@@ -14,13 +14,12 @@ public class Solution {
 			Edge edge = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
 			ewg.addEdge(edge);
 		}
-		KruskalMST krus = new KruskalMST(ewg);
 		String caseToGo = s.nextLine();
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
-			System.out.println(vertices + " vertices " + edges + " edges");
-			System.out.println(krus.weight());
+			//System.out.println(vertices + " vertices " + edges + " edges");
+			System.out.println(ewg);
 			break;
 
 		case "DirectedPaths":

@@ -9,12 +9,13 @@ Expected Output:
 5:
 
 Your Output: 
+6 vertices 6 edges
 6 6
-0: Edge@1e67b872  Edge@60addb54  
-1: Edge@3f2a3a5  Edge@4cb2c100  Edge@60addb54  
-2: Edge@6fb554cc  Edge@614c5515  Edge@3f2a3a5  
-3: Edge@614c5515  Edge@1e67b872  
-4: Edge@6fb554cc  Edge@4cb2c100  
+0: Edge@617c74e5  Edge@6537cf78  
+1: Edge@67b6d4ae  Edge@34b7bfc0  Edge@6537cf78  
+2: Edge@366e2eef  Edge@6df97b55  Edge@67b6d4ae  
+3: Edge@6df97b55  Edge@617c74e5  
+4: Edge@366e2eef  Edge@34b7bfc0  
 5:
 ----------------------------------------
 
@@ -36,12 +37,12 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 No Path Found.
 
 Your Output: 
-
+No Path Found.
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -49,15 +50,15 @@ Expected Output:
 370.0
 
 Your Output: 
-
+No Path Found.
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 No Path Found.
 
 Your Output: 
-
+No Path Found.
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -66,6 +67,6 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-
+No Path Found.
 ----------------------------------------
 

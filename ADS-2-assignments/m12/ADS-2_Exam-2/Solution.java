@@ -30,7 +30,7 @@ public class Solution {
 			DijkstraSP ds = new DijkstraSP(ewg, Integer.parseInt(tokens[0]));
 			// If the path exists print the distance between them.
 			if (ds.hasPathTo(Integer.parseInt(tokens[1]))) {
-				System.out.format("%.1f",ds.distTo(Integer.parseInt(tokens[1])));
+				System.out.format("%.01f",ds.distTo(Integer.parseInt(tokens[1])));
 			// Other wise print "No Path Found."
 			} else {
 				System.out.println("No Path Found.");

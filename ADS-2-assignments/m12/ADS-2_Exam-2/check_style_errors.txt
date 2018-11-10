@@ -235,8 +235,8 @@ Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:22: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:27: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:30: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:33:58: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:33:59: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:41: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.

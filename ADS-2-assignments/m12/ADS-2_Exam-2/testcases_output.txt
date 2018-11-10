@@ -9,7 +9,8 @@ Expected Output:
 5:
 
 Your Output: 
-KruskalMST@58ceff1
+6 vertices 6 edges
+7.0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########

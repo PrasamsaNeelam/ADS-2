@@ -19,7 +19,8 @@ public class Solution {
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
-			System.out.println(krus);
+			System.out.println(vertices + " vertices " + edges + " edges");
+			System.out.println(krus.weight());
 			break;
 
 		case "DirectedPaths":

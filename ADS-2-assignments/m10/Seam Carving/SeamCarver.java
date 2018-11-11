@@ -132,7 +132,9 @@ public class SeamCarver {
         int nextCol = col + 1;
         for (int i = -1; i <= 1; i++) {
             int nextRow = row + i;
-            if (nextRow < 0 || nextRow >= height) continue;
+            if (nextRow < 0 || nextRow >= height) {
+                continue;
+            }
             if (i == 0) {
                 if (distTo[nextRow][nextCol] >= distTo[row][col]
                         + energy(nextCol, nextRow)) {
@@ -158,6 +160,7 @@ public class SeamCarver {
      * @return sequence of indices for vertical seam.
      */
     public int[] findVerticalSeam() {
+        final double thousand = 1000.0;
         double[][] energy = new double[height][width];
         int[][] edgeTo = new int[height][width];
         double[][] distTo = new double[height][width];
@@ -167,7 +170,7 @@ public class SeamCarver {
             return indices;
         }
         for (int i = 0; i < width; i++) {
-            distTo[0][i] = 1000.0;
+            distTo[0][i] = thousand;
         }
         // this is for relaxation.
         for (int i = 0; i < height - 1; i++) {
@@ -193,7 +196,7 @@ public class SeamCarver {
         indices[0] = indices[1];
         return indices;
     }
-    /**
+    /**.
      *time complexity is O(W * H)
      *W is the width of image
      *H is the height of image
@@ -273,3 +276,4 @@ public class SeamCarver {
         width--;
     }
 }
+

@@ -1,6 +1,18 @@
+/**
+ * Class for dijkstra undirected sp.
+ */
 public class DijkstraUndirectedSP {
-    private double[] distTo;          // distTo[v] = distance  of shortest s->v path
+    /**
+     * Private variable for distance.
+     */
+    private double[] distTo;
+    /**
+     * Private variable for edge path.
+     */
     private Edge[] edgeTo;            // edgeTo[v] = last edge on shortest s->v path
+    /**
+     * Private variable for priority queue.
+     */
     private IndexMinPQ<Double> pq;    // priority queue of vertices
 
     /**
@@ -40,7 +52,12 @@ public class DijkstraUndirectedSP {
         assert check(G, s);
     }
 
-    // relax edge e and update pq if changed
+    /**
+     * relax edge e and update pq if changed.
+     *
+     * @param      e     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     private void relax(Edge e, int v) {
         int w = e.other(v);
         if (distTo[w] > distTo[v] + e.weight()) {
@@ -99,7 +116,6 @@ public class DijkstraUndirectedSP {
         return path;
     }
 
-
     // check optimality conditions:
     // (i) for all edges e = v-w:            distTo[w] <= distTo[v] + e.weight()
     // (ii) for all edge e = v-w on the SPT: distTo[w] == distTo[v] + e.weight()
@@ -152,6 +168,7 @@ public class DijkstraUndirectedSP {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
+
     private void validateVertex(int v) {
         int V = distTo.length;
         if (v < 0 || v >= V)

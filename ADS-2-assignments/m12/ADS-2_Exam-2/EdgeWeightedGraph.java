@@ -46,7 +46,7 @@ public class EdgeWeightedGraph {
      *
      * @return the number of vertices in this edge-weighted graph
      */
-    public int vertex() {
+    public int numberofVertices() {
         return ver;
     }
 
@@ -55,7 +55,7 @@ public class EdgeWeightedGraph {
      *
      * @return the number of edges in this edge-weighted graph
      */
-    public int e() {
+    public int numberofEdges() {
         return edge;
     }
 

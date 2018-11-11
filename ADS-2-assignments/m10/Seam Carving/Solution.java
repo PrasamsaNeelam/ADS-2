@@ -38,7 +38,7 @@ public final class Solution {
      * @param      seam       The seam
      * @param      direction  The direction
      */
-    public static void printSeam(final SeamCarver carver, final int[] seam,
+    public static void printSeam (final SeamCarver carver, final int[] seam,
         final boolean direction) {
         double totalSeamEnergy = 0.0;
 

@@ -7,13 +7,19 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     /**
      * Main function to drive the program.
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // Self loops are not allowed...
         // Parallel Edges are allowed...
         // Take the Graph input here...
@@ -23,7 +29,8 @@ public class Solution {
         EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertices);
         for (int i = 0; i < edges; i++) {
             String[] tokens = s.nextLine().split(" ");
-            Edge edge = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
+            Edge edge = new Edge(Integer.parseInt(tokens[0]),
+                Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
             ewg.addEdge(edge);
         }
 
@@ -39,10 +46,12 @@ public class Solution {
             // Handle the case of DirectedPaths, where two integers are given.
             String[] tokens = s.nextLine().split(" ");
             // First is the source and second is the destination.
-            DijkstraUndirectedSP ds = new DijkstraUndirectedSP(ewg, Integer.parseInt(tokens[0]));
+            DijkstraUndirectedSP ds = new DijkstraUndirectedSP(ewg,
+                Integer.parseInt(tokens[0]));
             // If the path exists print the distance between them.
             if (ds.hasPathTo(Integer.parseInt(tokens[1]))) {
-                System.out.format("%.01f",ds.distTo(Integer.parseInt(tokens[1])));
+                System.out.format("%.01f", ds.distTo(
+                    Integer.parseInt(tokens[1])));
             // Other wise print "No Path Found."
             } else {
                 System.out.println("No Path Found.");
@@ -52,7 +61,8 @@ public class Solution {
         case "ViaPaths":
             // Handle the case of ViaPaths, where three integers are given.
             String[] tokens1 = s.nextLine().split(" ");
-            // First is the source and second is the via is the one where path should pass throuh.
+            // First is the source and second is the via is the
+            // one where path should pass throuh.
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."

@@ -269,15 +269,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:10:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:16:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:26: Line is longer than 80 characters (found 122). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:42: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:45: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:45:43: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:55: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

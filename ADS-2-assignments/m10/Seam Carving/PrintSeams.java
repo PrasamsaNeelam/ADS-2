@@ -13,22 +13,21 @@
  *  The asterisks denote a minimum energy vertical or horizontal seam.
  *
  *  Vertical seam: { 3 4 3 2 1 }
- *  1000.00  1000.00  1000.00  1000.00* 1000.00  1000.00  
- *  1000.00   237.35   151.02   234.09   107.89* 1000.00  
- *  1000.00   138.69   228.10   133.07*  211.51  1000.00  
- *  1000.00   153.88   174.01*  284.01   194.50  1000.00  
- *  1000.00  1000.00* 1000.00  1000.00  1000.00  1000.00  
+ *  1000.00  1000.00  1000.00  1000.00* 1000.00  1000.00
+ *  1000.00   237.35   151.02   234.09   107.89* 1000.00
+ *  1000.00   138.69   228.10   133.07*  211.51  1000.00
+ *  1000.00   153.88   174.01*  284.01   194.50  1000.00
+ *  1000.00  1000.00* 1000.00  1000.00  1000.00  1000.00
  *  Total energy = 2414.973496
- *  
- *  
- *  Horizontal seam: { 2 2 1 2 1 2 }
- *  1000.00  1000.00  1000.00  1000.00  1000.00  1000.00 
- *  1000.00   237.35   151.02*  234.09   107.89* 1000.00  
- *  1000.00*  138.69*  228.10   133.07*  211.51  1000.00*  
- *  1000.00   153.88   174.01   284.01   194.50  1000.00  
- *  1000.00  1000.00  1000.00  1000.00  1000.00  1000.00  
- *  Total energy = 2530.681960
  *
+ *
+ *  Horizontal seam: { 2 2 1 2 1 2 }
+ *  1000.00  1000.00  1000.00  1000.00  1000.00  1000.00
+ *  1000.00   237.35   151.02*  234.09   107.89* 1000.00
+ *  1000.00*  138.69*  228.10   133.07*  211.51  1000.00*
+ *  1000.00   153.88   174.01   284.01   194.50  1000.00
+ *  1000.00  1000.00  1000.00  1000.00  1000.00  1000.00
+ *  Total energy = 2530.681960
  ******************************************************************************/
 
 import edu.princeton.cs.algs4.Picture;
@@ -36,10 +35,22 @@ import edu.princeton.cs.algs4.StdOut;
 /**
  * Class for print seams.
  */
-public class PrintSeams {
+public final class PrintSeams {
     private static final boolean HORIZONTAL = true;
     private static final boolean VERTICAL = false;
+    /**
+     * Constructs the object.
+     */
+    private PrintSeams() {
 
+    }
+    /**
+     * Print seam function.
+     *
+     * @param      carver     The carver
+     * @param      seam       The seam
+     * @param      direction  The direction
+     */
     private static void printSeam(final SeamCarver carver,
         final int[] seam, final boolean direction) {
         double totalSeamEnergy = 0.0;
@@ -48,8 +59,9 @@ public class PrintSeams {
             for (int col = 0; col < carver.width(); col++) {
                 double energy = carver.energy(col, row);
                 String marker = " ";
-                if ((direction == HORIZONTAL && row == seam[col]) ||
-                    (direction == VERTICAL && col == seam[row])) {
+                // direction = HORIZONTAL
+                if ((direction && row == seam[col])
+                    || (!direction && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }
@@ -62,14 +74,20 @@ public class PrintSeams {
         StdOut.println();
         StdOut.println();
     }
-
-    public static void main(String[] args) {
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Picture picture = new Picture(args[0]);
         StdOut.printf("%s (%d-by-%d image)\n", args[0],
             picture.width(), picture.height());
         StdOut.println();
-        StdOut.println("The table gives the dual-gradient energies of each pixel.");
-        StdOut.println("The asterisks denote a minimum energy vertical or horizontal seam.");
+        StdOut.println("The table gives the dual-gradient"
+            + "energies of each pixel.");
+        StdOut.println("The asterisks denote a minimum energy"
+            + "vertical or horizontal seam.");
         StdOut.println();
 
         SeamCarver carver = new SeamCarver(picture);

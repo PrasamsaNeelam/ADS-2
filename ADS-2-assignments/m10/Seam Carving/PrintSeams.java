@@ -36,7 +36,13 @@ import edu.princeton.cs.algs4.StdOut;
  * Class for print seams.
  */
 public final class PrintSeams {
+    /**
+     * boolean horizontal.
+     */
     private static final boolean HORIZONTAL = true;
+    /**
+     * boolean vertical.
+     */
     private static final boolean VERTICAL = false;
     /**
      * Constructs the object.

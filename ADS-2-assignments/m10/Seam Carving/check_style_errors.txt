@@ -2,14 +2,12 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:39:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:40:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:71: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:94: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:97: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:104: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:77: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:100: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:103: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\PrintSeams.java:110: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.
 Starting audit...

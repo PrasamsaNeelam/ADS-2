@@ -276,14 +276,8 @@ Audit done.
 Checkstyle ends with 56 errors.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:17: Class ShowEnergy should be declared as final. [FinalClass]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:18:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:29:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:33: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:35: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\ShowSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\ShowSeams.java:6: Line has trailing spaces. [RegexpSingleline]

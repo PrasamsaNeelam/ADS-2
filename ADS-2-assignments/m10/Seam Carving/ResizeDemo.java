@@ -15,7 +15,7 @@ import edu.princeton.cs.algs4.Stopwatch;
 /**
  * Class for resize demo.
  */
-public class ResizeDemo {
+public final class ResizeDemo {
     /**
      * Constructs the object.
      */
@@ -61,6 +61,4 @@ public class ResizeDemo {
         inputImg.show();
         outputImg.show();
     }
-    
 }
-

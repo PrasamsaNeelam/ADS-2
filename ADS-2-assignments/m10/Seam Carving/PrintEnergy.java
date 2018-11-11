@@ -4,8 +4,8 @@
  *  Dependencies: SeamCarver.java
  *
  *  Read image from file specified as command line argument. Print energy
- *  of each pixel as calculated by SeamCarver object. 
- * 
+ *  of each pixel as calculated by SeamCarver object.
+ *
  ******************************************************************************/
 public final class PrintEnergy {
     /**
@@ -36,3 +36,4 @@ public final class PrintEnergy {
         }
     }
 }
+

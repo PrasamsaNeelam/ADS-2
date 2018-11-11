@@ -55,30 +55,10 @@ Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:135: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:136:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:137: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:137:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:139: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:144: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:146: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:166:11: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:169:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:170:28: '1000.0' is a magic number. [MagicNumber]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:174:16: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:189:32: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:196: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:206:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:207:16: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:229:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:230:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:253:8: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:254:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:260: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:264: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:268:8: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:269:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...

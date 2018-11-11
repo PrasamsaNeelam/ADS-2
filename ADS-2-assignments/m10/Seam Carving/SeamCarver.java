@@ -119,6 +119,14 @@ public class SeamCarver {
         }
         return indices;
     }
+    /**
+     * relaxation for horizontal.
+     *
+     * @param      row     The row
+     * @param      col     The col
+     * @param      edgeTo  The edge to
+     * @param      distTo  The distance to
+     */
     private void relaxH(final int row, final int col,
         final int[][] edgeTo, final double[][] distTo) {
         int nextCol = col + 1;
@@ -126,13 +134,17 @@ public class SeamCarver {
             int nextRow = row + i;
             if (nextRow < 0 || nextRow >= height) continue;
             if(i == 0) {
-                if(distTo[nextRow][nextCol] >= distTo[row][col]  + energy(nextCol, nextRow)) {
-                    distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+                if(distTo[nextRow][nextCol] >= distTo[row][col] 
+                    + energy(nextCol, nextRow)) {
+                    distTo[nextRow][nextCol] = distTo[row][col] 
+                + energy(nextCol, nextRow);
                     edgeTo[nextRow][nextCol] = i;
                 }
             }
-            if (distTo[nextRow][nextCol] > distTo[row][col]  + energy(nextCol, nextRow)) {
-                distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+            if (distTo[nextRow][nextCol] > distTo[row][col] 
+                + energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col] 
+            + energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
             }
         }
@@ -187,7 +199,7 @@ public class SeamCarver {
      *H is the height of image
      * @param      distTo  The distance to
      */
-    private void reset(double[][] distTo) {
+    private void reset(final double[][] distTo) {
         /**
          *reset all the values to maxvalue.
          */
@@ -197,7 +209,16 @@ public class SeamCarver {
             }
         }
     }
-    private void relaxV(int row, int col, int[][] edgeTo, double[][] distTo) {
+    /**
+     * relaxation for vertex.
+     *
+     * @param      row     The row
+     * @param      col     The col
+     * @param      edgeTo  The edge to
+     * @param      distTo  The distance to
+     */
+    private void relaxV(final int row, final int col, final int[][] edgeTo,
+        final double[][] distTo) {
         int nextRow = row + 1;
         for (int i = -1; i <= 1; i++) {
             int nextCol = col + i;
@@ -206,20 +227,28 @@ public class SeamCarver {
             }
             //spl case for bottom element.
             if(i == 0) {
-                if(distTo[nextRow][nextCol] >= distTo[row][col] + energy(nextCol, nextRow)) {
-                distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
+                if(distTo[nextRow][nextCol] >= distTo[row][col]
+                    + energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col]
+            + energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
                 }
             }
-            if (distTo[nextRow][nextCol] > distTo[row][col] + energy(nextCol, nextRow)) {
-                distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
+            if (distTo[nextRow][nextCol] > distTo[row][col]
+                + energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col]
+            + energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
             }
         }
     }
-    // remove horizontal seam from current picture
-    //time complexity is O(width * height)
-    public void removeHorizontalSeam(int[] seam) {
+    /**
+     * Removes a horizontal seam.
+     * time complexity is O(width * height)
+     *
+     * @param      seam  The seam
+     */
+    public void removeHorizontalSeam(final int[] seam) {
         //handle exceptions
     for(int col = 0; col < width; col++) {
         for(int row = seam[col]; row < height - 1; row++) {
@@ -228,9 +257,14 @@ public class SeamCarver {
     }
     height--;
     }
-    // remove vertical seam from current picture
-    //time complexity is O(width * height)
-    public void removeVerticalSeam(int[] seam) {
+    
+    /**
+     * Removes a vertical seam.
+     * time complexity is O(width * height)
+     * 
+     * @param      seam  The seam
+     */
+    public void removeVerticalSeam(final int[] seam) {
     for(int row = 0; row < height; row++) {
         for(int col = seam[row]; col < width - 1; col++) {
         this.picture.set(col, row, this.picture.get(col + 1, row));

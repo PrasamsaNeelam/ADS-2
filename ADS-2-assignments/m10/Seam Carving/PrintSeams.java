@@ -74,7 +74,7 @@ public final class PrintSeams {
                 StdOut.printf("%7.2f%s ", energy, marker);
             }
             StdOut.println();
-        }                
+        }
         // StdOut.println();
         StdOut.printf("Total energy = %f\n", totalSeamEnergy);
         StdOut.println();
@@ -97,21 +97,23 @@ public final class PrintSeams {
         StdOut.println();
 
         SeamCarver carver = new SeamCarver(picture);
-        
         StdOut.printf("Vertical seam: { ");
         int[] verticalSeam = carver.findVerticalSeam();
-        for (int x : verticalSeam)
+        for (int x : verticalSeam) {
             StdOut.print(x + " ");
+        }
         StdOut.println("}");
         printSeam(carver, verticalSeam, VERTICAL);
 
         StdOut.printf("Horizontal seam: { ");
         int[] horizontalSeam = carver.findHorizontalSeam();
-        for (int y : horizontalSeam)
+        for (int y : horizontalSeam) {
             StdOut.print(y + " ");
+        }
         StdOut.println("}");
         printSeam(carver, horizontalSeam, HORIZONTAL);
 
     }
 
 }
+

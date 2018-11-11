@@ -113,8 +113,10 @@ public final class Solution {
                         String file = scan.nextLine();
                         seamCarver = new SeamCarver(new Picture("/Files/"
                                                                 + file));
-                        System.out.println(Arrays.toString(
-                                               seamCarver.findHorizontalSeam()));
+                        System.out.println(
+                            Arrays.toString(
+                                seamCarver.findHorizontalSeam(
+                                )));
                     }
                     break;
 

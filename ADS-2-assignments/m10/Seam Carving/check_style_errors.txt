@@ -8,15 +8,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SCUtility.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SCUtility.java:12: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SCUtility.java:24:43: '255' is a magic number. [MagicNumber]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SCUtility.java:25:43: '255' is a magic number. [MagicNumber]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SCUtility.java:26:43: '255' is a magic number. [MagicNumber]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SCUtility.java:43: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SCUtility.java:44: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SCUtility.java:97: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

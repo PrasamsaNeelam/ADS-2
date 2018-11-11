@@ -10,7 +10,7 @@ public final class SCUtility {
      */
     private SCUtility() { }
     /**
-     * create random width-by-height array of tiles
+     * create random width-by-height array of tiles.
      *
      * @param      width   The width
      * @param      height  The height
@@ -18,12 +18,13 @@ public final class SCUtility {
      * @return     { description_of_the_return_value }
      */
     public static Picture randomPicture(final int width, final int height) {
+        final int twofivefive = 255;
         Picture picture = new Picture(width, height);
         for (int col = 0; col < width; col++) {
             for (int row = 0; row < height; row++) {
-                int r = StdRandom.uniform(255);
-                int g = StdRandom.uniform(255);
-                int b = StdRandom.uniform(255);
+                int r = StdRandom.uniform(twofivefive);
+                int g = StdRandom.uniform(twofivefive);
+                int b = StdRandom.uniform(twofivefive);
                 Color color = new Color(r, g, b);
                 picture.set(col, row, color);
             }
@@ -40,9 +41,11 @@ public final class SCUtility {
      */
     public static double[][] toEnergyMatrix(final SeamCarver sc) {
         double[][] returnDouble = new double[sc.width()][sc.height()];
-        for (int col = 0; col < sc.width(); col++)
-            for (int row = 0; row < sc.height(); row++)
+        for (int col = 0; col < sc.width(); col++) {
+            for (int row = 0; row < sc.height(); row++) {
                 returnDouble[col][row] = sc.energy(col, row);
+            }
+        }
 
         return returnDouble;
     }
@@ -94,8 +97,9 @@ public final class SCUtility {
             }
         }
 
-        if (maxVal == 0)
+        if (maxVal == 0) {
             return picture; // return black picture
+        }
 
         for (int col = 0; col < width; col++) {
             for (int row = 0; row < height; row++) {

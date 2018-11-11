@@ -32,7 +32,7 @@ public final class Solution {
         }
     }
     /**
-     * { function to print }
+     * { function to print }.
      *
      * @param      carver     The carver
      * @param      seam       The seam
@@ -47,7 +47,7 @@ public final class Solution {
                 double energy = carver.energy(col, row);
                 String marker = " ";
                 if ((direction == true && row == seam[col])
-                    || (direction == false   && col == seam[row])) {
+                    || (direction == false && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }

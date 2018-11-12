@@ -18,7 +18,7 @@ public class Quick3string {
      * Rearranges the array of strings
      * in ascending order.
      *
-     * Complexity is 1.
+     * Complexity is 1.39N log N.
      *
      * @param a the array to be sorted
      */
@@ -51,7 +51,7 @@ public class Quick3string {
      * 3-way string quicksort a[lo..hi].
      * starting at dth character.
      *
-     * Complexity is ~2NlogN.
+     * Complexity is 1.39N logN.
      * It avoids recomparision of long prefixes.
      *
      * @param      a     { parameter_description }
@@ -135,6 +135,7 @@ public class Quick3string {
 
     /**
      * is v less than w, starting at character d.
+     * Time Complexity N.
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }

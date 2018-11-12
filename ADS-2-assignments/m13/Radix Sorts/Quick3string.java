@@ -23,7 +23,7 @@ public class Quick3string {
      * @param a the array to be sorted
      */
     public static void sort(final String[] a) {
-        StdRandom.shuffle(a);
+        // StdRandom.shuffle(a);
         sort(a, 0, a.length - 1, 0);
         assert isSorted(a);
     }

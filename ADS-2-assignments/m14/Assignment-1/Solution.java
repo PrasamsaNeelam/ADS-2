@@ -14,7 +14,10 @@ public class Solution {
 			}
 		}
 		String prefix = s.nextLine();
-		System.out.println(tst.keysWithPrefix(prefix));
+		for(String everykey : tst.keysWithPrefix(prefix)) {
+			System.out.println(everykey);
+		}
+
 	}
 
 	public static String[] loadWords() {

@@ -12,6 +12,7 @@ public class BoggleSolver {
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
+		
 		ArrayList<String> bag = new ArrayList<String>();
 		boolean[][] marked = new boolean[board.rows()][board.cols()];
 		for (int i = 0; i < board.rows(); i++) {

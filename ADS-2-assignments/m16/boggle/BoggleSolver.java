@@ -40,8 +40,8 @@ public class BoggleSolver {
 				bag.add(str);
 			}
 		}
-		for (int i = 0; i < board.rows(); i++) {
-			for (int j = 0; j < board.cols(); j++) {
+		for (int i = row - 1; i < row - 1 + 3; i++) {
+			for (int j = col - 1; j < col - 1 + 3; j++) {
 				if (!marked[i][j] && validate(i, j, board)) {
 					dfs(i, j, str, marked, board, bag);
 					marked[i][j] = false;

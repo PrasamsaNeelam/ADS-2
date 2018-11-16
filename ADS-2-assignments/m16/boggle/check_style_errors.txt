@@ -583,6 +583,8 @@ Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:28:55: Parameter marked should be final. [FinalParameters]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:28:75: Parameter board should be final. [FinalParameters]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:28:94: Parameter bag should be final. [FinalParameters]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:43:53: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:44:61: '3' is a magic number. [MagicNumber]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:52:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'validate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'validate' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:52:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:52:33: Parameter i should be final. [FinalParameters]
@@ -601,7 +603,7 @@ Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:67:45: '3' is a magic number. [MagicNumber]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:67:67: '4' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 40 errors.
+Checkstyle ends with 42 errors.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]

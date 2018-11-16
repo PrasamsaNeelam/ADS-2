@@ -3,7 +3,7 @@
  *
  * @param      <Value>  The value
  */
-public class TST<Value> {
+public final class TST<Value> {
     /**
      * size.
      */
@@ -237,8 +237,14 @@ public class TST<Value> {
         collect(x.mid, new StringBuilder(prefix), queue);
         return queue;
     }
-
-    public boolean hasPrefix(String str) {
+    /**
+     * Determines if it has prefix.
+     *
+     * @param      str   The string
+     *
+     * @return     True if has prefix, False otherwise.
+     */
+    public boolean hasPrefix(final String str) {
         Node x = get(root, str, 0);
         if (x == null) {
             return false;
@@ -359,4 +365,5 @@ public class TST<Value> {
     //         StdOut.println(s);
     // }
 }
+
 

@@ -42,7 +42,7 @@ public class BoggleSolver {
 		}
 		for (int i = row - 1; i < row - 1 + 3; i++) {
 			for (int j = col - 1; j < col - 1 + 3; j++) {
-				if (!marked[i][j] && validate(i, j, board)) {
+				if (validate(i, j, board) && !(marked[i][j])) {
 					dfs(i, j, str, marked, board, bag);
 					marked[i][j] = false;
 				}

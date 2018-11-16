@@ -14,9 +14,9 @@ public class BoggleSolver {
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
 		
 		ArrayList<String> bag = new ArrayList<String>();
-		boolean[][] marked = new boolean[board.rows()][board.cols()];
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
+				boolean[][] marked = new boolean[board.rows()][board.cols()];
 				String str = "";
 				dfs(i, j, str, marked, board, bag);
 			}

@@ -18,7 +18,7 @@ public class BoggleSolver {
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
 				marked[i][j] = true;
-				String str = board.getLetter(i, j)+"";
+				String str = "";
 				dfs(i, j, str, marked, board, bag);
 			}
 		}

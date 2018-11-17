@@ -96,7 +96,8 @@ public class Solution {
 			if (!st.contains(str[i])) {
 				st.put(str[i], 1);
 			} else {
-				st.put(str[i], i);
+				int k = st.get(str[i]);
+				st.put(str[i], k + 1);
 			}
 		}
 		return st;

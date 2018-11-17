@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Solution {
 
@@ -89,13 +90,15 @@ public class Solution {
 		// your code goes here
 		String[] str = toReadFile("/Files/t9.csv");
 		for (int i = 0; i < str.length; i++) {
+			str[i] = str[i].toLowerCase();
+		}
+		for (int i = 0; i < str.length; i++) {
 			if (!st.contains(str[i])) {
 				st.put(str[i], i);
 			}
 		}
 		return st;
 	}
-
 }
 
 class T9 {

@@ -92,6 +92,7 @@ public class Solution {
 		// 	st.put(data[i], i);
 		// }
 		String[] str = toReadFile("/Files/t9.csv");
+		System.out.println(str);
 		for (int i = 0; i < str.length; i++) {
 			st.put(str[i], i);
 		}

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.ArrayList;
+
 /**
  * Class for solution.
  */
@@ -25,7 +25,8 @@ public final class Solution {
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+            BinarySearchST<String, Integer> hash = loadDictionary(
+                    "/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -113,8 +114,10 @@ public final class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
-        BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+    public static BinarySearchST<String, Integer> loadDictionary(
+        final String file) {
+        BinarySearchST<String, Integer>  st = new BinarySearchST<String,
+        Integer>();
         // your code goes here
         String[] str = toReadFile("/Files/t9.csv");
         for (int i = 0; i < str.length; i++) {
@@ -147,7 +150,7 @@ class T9 {
         for (String str : st.keys()) {
             tst.put(str, st.get(str));
         }
-        
+
     }
 
     // get all the prefixes that match with given prefix.
@@ -185,14 +188,15 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words,
+        final int k) {
         // your code goes here
         return null;
     }
 
     // final output
     // Don't modify this method.
-    
+
     /**
      * Iterable function.
      *

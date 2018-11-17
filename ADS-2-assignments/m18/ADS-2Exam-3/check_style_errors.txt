@@ -376,18 +376,11 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:2:8: Unused import - java.util.ArrayList. [UnusedImports]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:28: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:116: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:117: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:138:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:144:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:144:15: Parameter st should be final. [FinalParameters]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:150: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:188: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:195: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:141:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:147:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:147:15: Parameter st should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]

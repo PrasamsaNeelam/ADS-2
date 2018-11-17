@@ -144,6 +144,9 @@ class T9 {
     public T9(BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
+        for (String str : st.keys()) {
+            tst.put(str, st.get(str));
+        }
         
     }
 

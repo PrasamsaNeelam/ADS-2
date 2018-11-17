@@ -378,22 +378,16 @@ Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:2:8: Unused import - java.util.ArrayList. [UnusedImports]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:28: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:105:39: Parameter file should be final. [FinalParameters]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:116:66: Parameter file should be final. [FinalParameters]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:116: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:117: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:138:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:144:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:144:15: Parameter st should be final. [FinalParameters]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:150: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:162:41: Parameter prefix should be final. [FinalParameters]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:173:44: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:188:44: Parameter words should be final. [FinalParameters]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:188:68: Parameter k should be final. [FinalParameters]
+[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:188: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:195: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:204:32: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:204:52: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\prasamsa\Desktop\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]

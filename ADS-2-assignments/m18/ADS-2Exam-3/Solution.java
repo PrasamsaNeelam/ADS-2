@@ -102,7 +102,7 @@ public final class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static String[] toReadFile(String file) {
+    public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
@@ -113,7 +113,7 @@ public final class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static BinarySearchST<String, Integer> loadDictionary(String file) {
+    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
         BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
         // your code goes here
         String[] str = toReadFile("/Files/t9.csv");
@@ -159,7 +159,7 @@ class T9 {
      *
      * @return     All words.
      */
-    public Iterable<String> getAllWords(String prefix) {
+    public Iterable<String> getAllWords(final String prefix) {
         // your code goes here
         return tst.keysWithPrefix(prefix);
     }
@@ -170,7 +170,7 @@ class T9 {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<String> potentialWords(String t9Signature) {
+    public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
         return null;
     }
@@ -185,7 +185,7 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
         // your code goes here
         return null;
     }
@@ -201,7 +201,7 @@ class T9 {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<String> t9(String t9Signature, int k) {
+    public Iterable<String> t9(final String t9Signature, final int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }

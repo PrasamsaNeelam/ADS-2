@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.TreeSet;
 
 /**
  * Class for solution.
@@ -178,7 +179,43 @@ class T9 {
      */
     public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
-        return null;
+        TreeSet<String> treeset = new TreeSet<>();
+        for (String word : tst.keys()) {
+            String[] character = word.split("");
+            String value = "";
+            for (String each : character) {
+                if (each.equals("a") || each.equals("b") || each.equals("c")) {
+                    value = value + "2";
+                }
+                if (each.equals("d") || each.equals("e") || each.equals("f")) {
+                    value = value + "3";
+                }
+                if (each.equals("g") || each.equals("h") || each.equals("i")) {
+                    value = value + "4";
+                }
+                if (each.equals("j") || each.equals("k") || each.equals("l")) {
+                    value = value + "5";
+                }
+                if (each.equals("m") || each.equals("n") || each.equals("o")) {
+                    value = value + "6";
+                }
+                if (each.equals("p") || each.equals("q") || each.equals("r")
+                        || each.equals("s")) {
+                    value = value + "7";
+                }
+                if (each.equals("t") || each.equals("u") || each.equals("v")) {
+                    value = value + "8";
+                }
+                if (each.equals("w") || each.equals("x") || each.equals("y")
+                        || each.equals("z")) {
+                    value = value + "9";
+                }
+            }
+            if (value.equals(t9Signature)) {
+                treeset.add(word);
+            }
+        }
+        return treeset;
     }
 
     // return all possibilities(words), find top k with highest frequency.
@@ -194,7 +231,21 @@ class T9 {
     public Iterable<String> getSuggestions(final Iterable<String> words,
         final int k) {
         // your code goes here
-        return null;
+        TreeSet<String> treeset = new TreeSet<>();
+        MaxPQ<Integer> maxpq = new MaxPQ<>();
+        for (String word : words) {
+            maxpq.insert(tst.get(word));
+        }
+        for (int i = 0; i < k; i++) {
+            int f = maxpq.delMax();
+            for (String word : words) {
+                if (f == tst.get(word)) {
+                    treeset.add(word);
+                }
+            }
+        }
+        // System.out.println("set" + treeset);
+        return treeset;
     }
 
     // final output

@@ -10,15 +10,14 @@ Expected Output:
 149
 
 Your Output: 
-[Ljava.lang.String;@2752f6e2
-62967
-60337
-63564
-37929
-61476
-63478
-61689
-62796
+1
+1
+1
+1
+1
+1
+1
+1
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -58,7 +57,7 @@ messagesome
 going
 
 Your Output: 
-[Ljava.lang.String;@e580929
+
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -126,7 +125,6 @@ fine
 seeking
 
 Your Output: 
-[Ljava.lang.String;@e580929
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:37)
 ----------------------------------------
@@ -139,7 +137,6 @@ right
 words
 
 Your Output: 
-[Ljava.lang.String;@e580929
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:56)
 ----------------------------------------
@@ -193,7 +190,6 @@ paper
 keep
 
 Your Output: 
-[Ljava.lang.String;@e580929
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:69)
 ----------------------------------------

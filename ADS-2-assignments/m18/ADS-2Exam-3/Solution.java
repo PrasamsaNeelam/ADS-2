@@ -87,14 +87,11 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
-		// String[] data = file.split(" ");
-		// for (int i = 0; i < data.length; i++) {
-		// 	st.put(data[i], i);
-		// }
 		String[] str = toReadFile("/Files/t9.csv");
-		System.out.println(str);
 		for (int i = 0; i < str.length; i++) {
-			st.put(str[i], i);
+			if (!st.contains(str[i])) {
+				st.put(str[i], 1);
+			}
 		}
 		return st;
 	}

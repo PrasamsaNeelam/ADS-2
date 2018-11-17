@@ -94,6 +94,8 @@ public class Solution {
 		}
 		for (int i = 0; i < str.length; i++) {
 			if (!st.contains(str[i])) {
+				st.put(str[i], 1);
+			} else {
 				st.put(str[i], i);
 			}
 		}

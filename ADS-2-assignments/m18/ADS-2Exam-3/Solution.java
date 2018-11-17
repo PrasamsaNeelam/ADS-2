@@ -90,7 +90,7 @@ public class Solution {
 		String[] str = toReadFile("/Files/t9.csv");
 		for (int i = 0; i < str.length; i++) {
 			if (!st.contains(str[i])) {
-				st.put(str[i], 1);
+				st.put(str[i], i);
 			}
 		}
 		return st;

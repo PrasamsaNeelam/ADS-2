@@ -141,13 +141,13 @@ class T9 {
     /**
      * Variable for tst.
      */
-    TST<Integer> tst;
+    private TST<Integer> tst;
     /**
      * Constructs the object.
      *
      * @param      st    { parameter_description }
      */
-    public T9(final BinarySearchST<String, Integer> st) {
+    protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
         for (String str : st.keys()) {
@@ -212,3 +212,4 @@ class T9 {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
+

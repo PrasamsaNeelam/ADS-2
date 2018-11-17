@@ -138,13 +138,16 @@ public final class Solution {
  * Class for t 9.
  */
 class T9 {
-    private TST<Integer> tst;
+    /**
+     * Variable for tst.
+     */
+    TST<Integer> tst;
     /**
      * Constructs the object.
      *
      * @param      st    { parameter_description }
      */
-    public T9(BinarySearchST<String, Integer> st) {
+    public T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
         for (String str : st.keys()) {
